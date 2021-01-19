@@ -46,7 +46,6 @@
             this.textcin.Name = "textcin";
             this.textcin.Size = new System.Drawing.Size(283, 20);
             this.textcin.TabIndex = 0;
-            this.textcin.TextChanged += new System.EventHandler(this.textcin_TextChanged);
             // 
             // cin
             // 

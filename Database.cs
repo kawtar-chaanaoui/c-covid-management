@@ -50,12 +50,13 @@ namespace Covid
             if (OpenConnection())
             {
                 String sql = "INSERT INTO Citoyen(cin,nom,prenom,age,adresse,etat,maladie_grave) VALUES('" + citoyen.getcin() + "','" + citoyen.getNom() + "','" +
-                    citoyen.getPrenom() + "'," + citoyen.getAge() + ",'" + citoyen.getAdresse() + "'," + citoyen.getEtat() + ",'" + citoyen.getMaladie_grave() + "');";
+                    citoyen.getPrenom() + "'," + citoyen.getAge() + ",'" + citoyen.getAdresse() + "'," + citoyen.getEtat() + ",'" + citoyen.getMaladie_grave() + "')";
                 try
                 {
                     SqlCommand command = new SqlCommand(sql, con);
                     command.ExecuteNonQuery();
                     CloseConnection();
+
                     MessageBox.Show("DONE");
 
                 }

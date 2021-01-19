@@ -28,17 +28,10 @@ namespace Covid
 
         private void Ajout_Click(object sender, EventArgs e)
         {
-            /* Citoyen c1 = new Citoyen();
+            Form3 F = new Form3(this);
 
-            /* c1.setcin(textcin.Text);
-             c1.setNom(textnom.Text);
-             c1.setPrenom(textprenom.Text);
-             c1.setAdresse(textadress.Text);
-             c1.setAge(Convert.ToInt32(textage.Text));
-             c1.setMaladie_grave(textmalad.Text);
-             c1.setEtat(Convert.ToInt32(textetat.Text));
-             metier = new Metier();
-             metier.insertCit(c1);*/
+            F.ShowDialog();
+          
         }
 
         private void Supp_Click(object sender, EventArgs e)
@@ -54,44 +47,6 @@ namespace Covid
             Form2 F = new Form2(this);
            
              F.ShowDialog();
-
-            //Form2 S = new Form2();
-            //S.Show();
-        }
-
-        /* private void Affich_Click(object sender, EventArgs e)
-         {
-            DataTable dataT= new DataTable(); 
-             string cin = textcin.Text;
-             metier = new Metier();
-             dataT = metier.Affinf(cin).Copy();
-             dataT.Merge((metier.Affinfo(cin)),true);
-             dataGridView1.DataSource =dataT ;
-
-         }
-
-
-         private void button1_Click(object sender, EventArgs e)
-         {
-             Form2 S = new Form2();
-             S.Show();
-
-         }
-
-         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-         {
-
-         }*/
-        public string getcin()
-        {
-            string cin = textcin.Text;
-            return cin;
-        }
-
-        private void textcin_TextChanged(object sender, EventArgs e)
-        {
-            getcin();
-
         }
     }
 }
