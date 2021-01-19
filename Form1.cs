@@ -46,6 +46,8 @@ namespace Covid
 
         private void Affich_Click(object sender, EventArgs e)
         {
+           /* Form2 S = new Form2();
+            S.Show();*/
             string cin = textcin.Text;
             metier = new Metier();
             dataGridView1.DataSource
