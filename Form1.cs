@@ -11,7 +11,6 @@ using System.Windows.Forms;
 namespace Covid
 
 { 
-    
 
     public partial class Form1 : Form
     {
@@ -51,12 +50,15 @@ namespace Covid
 
         private void Affich_Click(object sender, EventArgs e)
         {
-           
+           DataTable dataT= new DataTable(); 
             string cin = textcin.Text;
             metier = new Metier();
-            dataGridView1.DataSource
-                = metier.Affinfo(cin);
+            dataT = metier.Affinf(cin).Copy();
+            dataT.Merge((metier.Affinfo(cin)),true);
+            dataGridView1.DataSource =dataT ;
+
         }
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
