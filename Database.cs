@@ -91,7 +91,7 @@ namespace Covid
             DataTable data = new DataTable();
             if (OpenConnection())
             {
-                String sql = "SELECT * FROM Citoyen WHERE cin = '" + cin + "'";
+                String sql = "SELECT * FROM Citoyen WHERE cin = '" + cin + "' SELECT * FROM CPR WHERE cin = '" + cin + "' ";
                 try
                 {
                     SqlCommand command = new SqlCommand(sql, con);
