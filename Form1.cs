@@ -11,6 +11,7 @@ using System.Windows.Forms;
 namespace Covid
 
 { 
+    
 
     public partial class Form1 : Form
     {
@@ -18,8 +19,12 @@ namespace Covid
         Metier metier;
         public Form1()
         {
+            
             InitializeComponent();
+
         }
+
+
 
         private void Ajout_Click(object sender, EventArgs e)
         {
@@ -46,12 +51,18 @@ namespace Covid
 
         private void Affich_Click(object sender, EventArgs e)
         {
-           /* Form2 S = new Form2();
-            S.Show();*/
+           
             string cin = textcin.Text;
             metier = new Metier();
             dataGridView1.DataSource
                 = metier.Affinfo(cin);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 S = new Form2();
+            S.Show();
+
         }
     }
 }
