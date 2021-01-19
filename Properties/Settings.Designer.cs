@@ -32,5 +32,29 @@ namespace Covid.Properties {
                 return ((string)(this["MycovidConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("16, 16")]
+        public global::System.Drawing.Size img {
+            get {
+                return ((global::System.Drawing.Size)(this["img"]));
+            }
+            set {
+                this["img"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Transparent")]
+        public global::System.Drawing.Color b {
+            get {
+                return ((global::System.Drawing.Color)(this["b"]));
+            }
+            set {
+                this["b"] = value;
+            }
+        }
     }
 }

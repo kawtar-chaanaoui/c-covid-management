@@ -10,5 +10,11 @@
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Data Source=DESKTOP-SC1DR6N;Initial Catalog=Mycovid;Integrated Security=True</Value>
     </Setting>
+    <Setting Name="img" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">16, 16</Value>
+    </Setting>
+    <Setting Name="b" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Transparent</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
