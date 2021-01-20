@@ -56,9 +56,8 @@ namespace Covid
                     SqlCommand command = new SqlCommand(sql, con);
                     command.ExecuteNonQuery();
                     CloseConnection();
-
                     MessageBox.Show("DONE");
-
+ 
                 }
                 catch (Exception ex)
                 {
@@ -135,6 +134,31 @@ namespace Covid
                 }
             }
             return data1;
+        }
+        public DataTable Aff(string cin)
+
+        {
+            DataTable data2 = new DataTable();
+            if (OpenConnection())
+            {
+                String sql = "SELECT * FROM Quarantined WHERE cin = '" + cin + "'";
+                try
+                {
+                    SqlCommand command = new SqlCommand(sql, con);
+
+
+                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+                    adapter.Fill(data2);
+                    return data2;
+
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+            }
+            return data2;
         }
 
     }

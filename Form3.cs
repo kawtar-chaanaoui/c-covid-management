@@ -15,16 +15,16 @@ namespace Covid
     {
 
         Metier metier;
-        Form1 f1;
-        public Form3(Form1 frm1)
+        Form1 f2;
+        public Form3(Form1 frm2)
         {
             InitializeComponent();
-            this.f1 = frm1;
+            this.f2 = frm2;
         }
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            textcin2.Text = f1.textcin.Text;
+            textcin2.Text = f2.textcin.Text;
         }
         
         

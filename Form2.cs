@@ -26,13 +26,18 @@ namespace Covid
         {
             textBox1.Text = f1.textcin.Text;
             DataTable dataT = new DataTable();
+           
+
             f1 = new Form1();
             string cin = textBox1.Text;
             metier = new Metier();
             dataT = metier.Affinf(cin).Copy();
             dataT.Merge((metier.Affinfo(cin)), true);
+            
             dataGridView1.DataSource = dataT;
 
         }
+
+        
     }
 }

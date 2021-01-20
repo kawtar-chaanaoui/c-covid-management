@@ -47,6 +47,12 @@ namespace Covid
             Form2 F = new Form2(this);
            
              F.ShowDialog();
+
+
+           
+
         }
     }
 }
+
+

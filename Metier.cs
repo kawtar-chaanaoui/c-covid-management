@@ -37,6 +37,23 @@ namespace Covid
 
             return data1;
         }
+        public DataTable Aff(string cin)
+        {
+            DataTable data2 = new DataTable();
+            dataBase = new DataBase();
+            data2 = dataBase.Affinf(cin);
+
+            return data2;
+        }
+        public DataTable Af(string cin)
+        {
+            DataTable data3 = new DataTable();
+            dataBase = new DataBase();
+            data3 = dataBase.Affinf(cin);
+
+            return data3;
+        }
+
 
     }
 

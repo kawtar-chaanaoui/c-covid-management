@@ -379,7 +379,7 @@
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(131, 128);
             this.richTextBox1.TabIndex = 40;
-            this.richTextBox1.Text = "      ETATS\n0=Saint\n1=Guérir\n2=quarantine\n3=Hospitalisé\n";
+            this.richTextBox1.Text = "      ETATS\n0=Saint\n1=Guérir\n2=quarantine\n3=Hospitalisé\n5= vacciné\n\n";
             // 
             // ok_Btn
             // 

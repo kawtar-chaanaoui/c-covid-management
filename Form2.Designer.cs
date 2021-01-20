@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -55,19 +56,23 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(745, 362);
+            this.textBox1.Location = new System.Drawing.Point(739, 336);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(10, 20);
             this.textBox1.TabIndex = 3;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(713, 362);
+            this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Thistle;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(684, 323);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(63, 33);
+            this.button1.Size = new System.Drawing.Size(81, 33);
             this.button1.TabIndex = 4;
-            this.button1.Text = "button1";
+            this.button1.Text = "+Detaills";
             this.button1.UseVisualStyleBackColor = true;
+            
             // 
             // Form2
             // 
